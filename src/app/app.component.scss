@@ -8,10 +8,13 @@ h1{
 }
 
 .services{
+  background-color: white;
+  height: 400px;
+  margin-top: -220px;
   .headline{
+    color: black;
     font-size: 9em;
     line-height: 1.5em;
-    border-bottom: 10px dotted white;
   }
 }
 
@@ -21,6 +24,18 @@ h1{
     line-height: 1.5em;
     border-bottom: 10px dotted white;
   }
+  h1{
+    font-size: 50px;
+  }
+  .what-icon{
+    width: 70%;
+  }
+  .what-text{
+    color:white;
+    text-align: left;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .beat{
@@ -28,6 +43,18 @@ h1{
     font-size: 9em;
     line-height: 1.5em;
     border-bottom: 10px dotted white;
+  }
+  h1{
+    font-size: 50px;
+  }
+  .what-icon{
+    width: 70%;
+  }
+  .what-text{
+    color:white;
+    text-align: left;
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 
@@ -37,13 +64,26 @@ h1{
     line-height: 1.5em;
     border-bottom: 10px dotted white;
   }
+  h1{
+    font-size: 50px;
+  }
+  .what-icon{
+    width: 70%;
+  }
+  .what-text{
+    color:white;
+    text-align: left;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .tracks{
+  background-color: white;
+  height: 100%;
   .headline{
+    color: black;
     font-size: 9em;
-    line-height: 1.5em;
-    border-bottom: 10px dotted white;
   }
 }
 
