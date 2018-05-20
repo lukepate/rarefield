@@ -2,6 +2,7 @@
 
 // VARIALBLES
 // Demo colors:
+
 $demoMain: rgba(51, 153, 204,.2);
 $demoMainDark: rgba(51, 153, 204,.6);
 $demoBorder: #33cccc;
@@ -16,12 +17,12 @@ body {
   margin: -8px; // angular cli adds
   color: #404040;
   background-color: black;
-  font: 100 1em/150% "proxima-nova", Helvetica, sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 .wrapper{
   max-width: 1200px;
-  margin: auto;
+  padding: 0px 10%;
 }
 
 h1, h2, h3, h4 {
@@ -40,12 +41,14 @@ strong {font-weight: 600;}
 hr {
     border: none;
     height: 1px;
-    background-color: $demoMain;
+    background-color: white;
 }
-
+body{
+  overflow-x: hidden;
+}
 .header {
-  margin: -8px -16px -8px -16px; // only to copensate for extra user agent stylesheet px
-  background-color: $demoBlack;
+  // margin: -8px -16px -8px -16px; // only to copensate for extra user agent stylesheet px
+  background-color: black;
   .header-text{
     max-width: 1200px;
     margin: auto;
@@ -55,16 +58,21 @@ hr {
       padding: 0;
       overflow: hidden;
       background-color: $demoBlack;
+      padding-top:20px;
     }
     li {
       float: left;
+      list-style-type: none;
+      padding-top:30px;
+
     }
     li a {
+
       display: block;
-      color: white;
-      text-align: center;
+      color: grey;
       padding: 14px 16px;
       text-decoration: none;
+      font-family: "Refrigerator Deluxe";
     }
     li a:hover:not(.active) {
         background-color: $demoBlackHover;
@@ -87,6 +95,7 @@ hr {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
+  text-align: center;
 }
 .u-textCenter {
  text-align: center;
