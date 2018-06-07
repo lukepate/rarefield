@@ -1,6 +1,13 @@
 h1{
   color: white;
 }
+hr{
+  position: relative;
+  width: 50px;
+  height: 5px;
+  float: left;
+  margin-top:15px;
+}
 .header-img{
   width: 100%;
 }
@@ -11,90 +18,98 @@ iframe {
 #player{
   max-width: 100%!important;
 }
-
 .header{
-    background-color: black;
+    background-color: #1a1514;
     .logo{
-      width: 9%;
-      margin-top: 7px;
+      width: 80px;
+      margin-top: 12px;
       float: left
+
     }
     ul {
       list-style-type: none;
       margin: 0;
-      padding: 20px 0px 10px 0px;
+      padding: 20px 50px 10px 50px;
       overflow: hidden;
-      font-family: 'Merriweather', serif;
+      font-family: 'mrs-eaves-roman-small-caps', serif;
+      border-bottom: solid 1px;
     }
 
-    
     li {
         float: left;
     }
     li a {
         display: block;
-        color: rgb(56,56,56);
+        color: #686564;
         text-align: center;
-        padding: 14px 16px;
+        padding: 14px 40px;
+        font-family: "mrs-eaves-roman-small-caps";
         text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 12px;
+        padding-top: 30px;
+    }
+    li a:hover {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+    .insta-icon{
+      width: 50px;
+      margin-top: -10px;
+      padding-bottom: 10px;
+    }
+    .down-icon{
+      width: 30%;
+      margin-top: -20px;
+    }
+    .header-text{
+      font-size: 20px;
+      opacity: 0.9;
+      color: white;
+      font-family: 'Refrigerator Deluxe', sans-serif;
     }
     .header-links{
       color: white;
-      position: absolute;
-      margin-top: -7%;
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      .insta-icon{
-        width: 30%;
-        margin-top: -10px;
-      }
-      .down-icon{
-        width: 30%;
-        margin-top: -20px;
-      }
-      .header-text{
-        font-size: 20px;
-        margin-left: -70px;
-      }
+    }
+    .header-links{
+      margin-top: -100px;
     }
 }
-
-.services{
-  border-bottom: dashed 4px white;
-  height: 100%;
-  .headline{
-    text-align: left;
-    color: white;
-    font-size: 100px;
-    font-weight: bold;
-    line-height: 1.5em;
-    padding: 25px 0px;
-  }
-}
-
 
 .what{
   padding-bottom: 80px;
   color:white;
   .headline{
-    font-size: 9em;
-    line-height: 1.5em;
+    text-align: left;
+    color: white;
+    font-family: 'lexia-advertising', serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 50px 0px 0px 0px;
+    letter-spacing: 1px;
   }
   .subheadline{
     font-size: 30px;
     line-height: 36px;
+    letter-spacing: 1px;
     text-align: left;
   }
+
   h1{
     font-size: 50px;
+    font-family: 'Refrigerator Deluxe', sans-serif;
+    margin-bottom: 0px;
   }
   p{
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 0.9;
   }
   .what-icon{
-    width: 40%;
+    width: 200px;
     padding-top: 13%;
   }
   .what-tracking{
@@ -115,8 +130,9 @@ iframe {
   padding-bottom: 80px;
   p{
     text-align: left;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 0.9;
     // padding-bottom: 40px;
   }
   h1{
@@ -125,6 +141,8 @@ iframe {
     text-align: left;
     margin: 0px;
     border-bottom: solid 2px white;
+    font-family: 'Refrigerator Deluxe', sans-serif;
+    font-weight: 900;
   }
   button{
     width: 200px;
@@ -133,24 +151,31 @@ iframe {
     font-size: 20px;
     font-weight: 900;
     margin-top: -20px;
+    cursor: pointer;
+    font-family: 'lexia-advertising', sans-serif;
+
   }
   .whatWeDoText{
     padding-top: 80px;
   }
   .headline{
-    padding: 25px 10%;
+    padding: 25px 0% 0px 0px;
     text-align: left;
-    font-size: 100px;
+    font-family: 'lexia-advertising', serif;
+    font-size: 20px;
+    font-weight: bold;
     line-height: 1.5em;
-    border-bottom: dashed 4px white;
+    letter-spacing: 1px;
   }
   .subheadline{
     padding-top: 40px;
     padding-right: 100px;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 26px;
     text-align: left;
-    padding-bottom: 40px;
+    opacity: 0.9;
+    font-weight: 100;
+    letter-spacing: 1px;
   }
   .price-container{
     width: 100%;
@@ -162,9 +187,13 @@ iframe {
   }
   .price-text{
     font-size: 30px;
+    font-family: 'Refrigerator Deluxe', sans-serif;
   }
   .beat-img{
     width: 100%;
+  }
+  .beat-padding{
+    padding-top: 60px;
   }
 }
 
@@ -174,12 +203,11 @@ iframe {
   padding-bottom: 80px;
   .headline{
     text-align: left;
-    font-size: 5em;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'lexia-advertising', serif;
     line-height: 1.5em;
-    border-bottom: dashed 4px white;
-    padding-left: 120px;
-    margin-bottom: 40px;
-
+    letter-spacing: 1px;
   }
   .equipment-name{
     display: flex;
@@ -189,13 +217,30 @@ iframe {
     width: 500px;
     padding-bottom: 20px;
     cursor: pointer;
+    font-family: 'Refrigerator Deluxe', sans-serif;
+    font-weight: 900;
     .icon{
       width: 7%;
+    }
+    hr{
+      width: 90%;
+      height: 1px;
     }
     .equipment-text{
       font-size: 24px;
       padding-left: 50px;
+      margin-top:-30px
     }
+    p{
+      font-weight: 100;
+      font-family: 'Merriweather', serif;
+      padding: 0px;
+      margin: 5px;
+      font-size: 16px;
+    }
+  }
+  .equipment-padding{
+    padding-top:40px;
   }
   .equipment-icon-name{
     margin-top: 5px;
@@ -216,9 +261,12 @@ iframe {
   .headline{
     text-align: left;
     font-size: 5em;
-    line-height: 1.5em;    border-top: dashed 4px white;
+    line-height: 1.5em;
+    font-family: 'lexia-advertising', serif;
+    border-top: dashed 4px white;
     border-bottom: dashed 4px white;
     padding-left: 120px;
+    letter-spacing: 1px;
   }
 }
 
@@ -238,7 +286,6 @@ iframe {
 .footer{
   padding: 40px 0%;
   color: white;
-  background-color: rgb(24,24,24);
 
   .footer-container{
     display:flex;
@@ -247,11 +294,13 @@ iframe {
 
   .headline{
     font-size: 9em;
+    letter-spacing: 1px;
     line-height: 1.5em;
+    font-family: 'lexia-advertising', serif;
     border-bottom: 10px dashed white;
   }
   .insta-icon{
-    width: 7%;
+    width: 60%;
     margin-top: 15px;
   }
   .contact-icon{
@@ -280,8 +329,9 @@ iframe {
       display: block;
       color: white;
       text-align: left;
-      padding: 14px 16px;
+      padding: 14px 0px;
       text-decoration: none;
+      font-family: 'Refrigerator Deluxe', sans-serif;
   }
   .right{
     float: right;
@@ -290,13 +340,42 @@ iframe {
 .nav-mobile{
   display: none;
 }
-
+.dropdown{
+  display:none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #1a1514;
+  padding: 5px 0;
+  a{
+    padding: 20px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
+.mobile{
+  display: none;
+}
 @media only screen and (max-width: 1100px) {
-  .services .headline {
-    font-size: 80px;
+  .ig-logo{
+    width: 100%;
+  }
+  .header .header-links .insta-icon {
+    width: 50px;
+    padding-bottom: 10px;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
   }
   .nav-desktop{
     display: none;
+  }
+  .dropdown{
+    display: inline-grid;
   }
   .nav-mobile{
     display: block;
@@ -311,8 +390,12 @@ iframe {
   .services .headline {
     font-size: 60px;
   }
-  .beat .headline {
-    font-size: 80px;
+  .header-links{
+    margin-top: 0px!important;
+  }
+
+  .header .header-links .header-text {
+    font-size: 14px;
   }
   .footer .right{
     float: left;
@@ -321,24 +404,57 @@ iframe {
     font-size: 10px;
   }
   .what .what-icon {
-    padding-top: 60%;
+    padding-bottom: 3%;
+    padding-top: 30%;
+  }
+  .equipment {
+    cursor: pointer;
+    .equipment-name {
+      font-size: 34px;
+      cursor: pointer;
+    }
+  }
+  .beat .subheadline {
+    padding-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .what .what-icon {
+    padding-bottom: 3%;
+    padding-top: 0%;
+  }
+  .header .header-links .header-text {
+    font-size: 10px;
+  }
+  .what .headline {
+    font-size: 12px;
+  }
+  .beat .headline {
+    font-size: 12px;
+  }
+  .beat .headline {
+    font-size: 12px;
+  }
+  .equipment .headline {
+    font-size: 12px;
+  }
+  .beat .headline {
+    font-size: 12px;
+  }
+  .beat .subheadline, .beat p{
+    font-size: 12px;
+    line-height: 24px;
+    width: 100%;
+  }
+  .wrapper {
+    padding: 0px 10%!important;
   }
 }
 @media only screen and (max-width: 414px){
   .header ul {
       font-size: 4px;
   }
-  .header .header-links {
-    margin-top: -10%;
-  }
-  .header .header-links .header-text {
-    font-size: 10px;
-    margin-left: -100px;
-  }
-  .header .header-links .insta-icon {
-    width: 18%;
-    margin-top: 0px;
-  }
+
   .services .headline{
     font-size: 30px;
   }

@@ -16,13 +16,13 @@ $demoBlackHover: rgba(0,0,0,1);
 body {
   margin: -8px; // angular cli adds
   color: #404040;
-  background-color: black;
+  background-color: #1a1514;
   font-family: 'Merriweather', serif;
 }
 
 .wrapper{
   max-width: 1200px;
-  padding: 0px 10%;
+  padding: 0px 20%;
 }
 
 h1, h2, h3, h4 {
@@ -82,6 +82,7 @@ body{
     }
   }
 }
+
 
 .img-placeholder {
   background-image: url("http://placehold.it/200x100/CC99CC/ffffff&text=Feature");

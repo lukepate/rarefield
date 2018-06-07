@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { HostListener } from '@angular/core'
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,10 @@ export class AppComponent {
   soft: any = false;
   Hardware: any;
   Software: any;
+  dropdownShow: any = true;
+  desktopRarefield: any = "../../assets/rarefield_1920.jpg"
+
+  @HostListener('window:scroll', ['$event'])
 
   changeMic(){
     if(this.mic){
@@ -21,6 +26,14 @@ export class AppComponent {
       this.hard = false;
       this.soft = false;
     }
+  }
+
+  ngOnInit() {
+    if(window.innerWidth < 800){
+      this.desktopRarefield = "../../assets/bg_mobile.jpg";
+    }
+
+    console.log(window.innerWidth)
   }
 
   changeHard(){

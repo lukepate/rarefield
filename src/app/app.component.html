@@ -1,226 +1,172 @@
 <body>
 
   <!-- navbar -->
-
   <div class="header">
-    <div class="wrapper">
-
-    <ul>
-      <img class="logo" src="../../assets/icon-rarefield.svg">
-      <div class="nav-desktop">
-        <li style="float:right"><a class="active" href="#footer">CONTACT</a></li>
-        <li style="float:right"><a class="active" href="#featured">FEATURED WORK</a></li>
-        <li style="float:right"><a class="active" href="#beat">BEAT LEASING</a></li>
-        <li style="float:right"><a class="active" href="#what">BOOKING</a></li>
-        <li style="float:right"><a class="active" href="#studio">STUDIO SERVICES </a></li>
-      </div>
-      <div class="nav-mobile">
-        <img style="float:right" class="hb" src="../../assets/hb-off.svg">
-      </div>
-    </ul>
-    </div>
+      <ul>
+        <img class="logo" src="../../assets/icon-rarefield.svg">
+        <div class="nav-desktop">
+          <li style="float:right"><a class="active" href="#contact">CONTACT</a></li>
+          <li style="float:right"><a class="active" href="#featured">FEATURED WORK</a></li>
+          <li style="float:right"><a class="active" href="#beat">BEAT LEASING</a></li>
+          <li style="float:right"><a class="active" href="#what">BOOKING</a></li>
+          <li style="float:right"><a class="active" href="#studio">STUDIO SERVICES </a></li>
+        </div>
+        <div class="nav-mobile">
+          <img style="float:right" class="hb" src="../../assets/hb-off.svg" (click)="dropdownShow = !dropdownShow">
+        </div>
+        <div [hidden]="dropdownShow" class="dropdown">
+          <a href="#studio" [hidden]="dropdownShow">STUDIO SERVICES</a>
+          <a [hidden]="dropdownShow">WHAT WE DO</a>
+          <a href="#beat" [hidden]="dropdownShow">BEAT LEASES</a>
+          <a href="#featured" [hidden]="dropdownShow">EQUIPMENT</a>
+          <a href="#contact" [hidden]="dropdownShow">CONTACT</a>
+        </div>
+      </ul>
   </div>
 
   <!-- header -->
   <section class="header">
-    <img class="header-img" src="../../assets/rarefield_1920.jpg">
-    <div class="wrapper">
-      <div class="header-links">
-
-      <div>
-        <a href="https://www.instagram.com/rarefieldrecordings/"><img class="insta-icon" src="../../assets/icon-insta.svg"></a>
-      </div>
-      <div>
-        <span class="header-text">352.665.6663 | rarefieldrecordings@gmail.com</span>
-      </div>
-      <div>
-        <!-- <img class="down-icon" src="../../assets/arrow-rfr.svg"> -->
-      </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="services">
-    <div class="wrapper">
-      <div class="Grid Grid--full">
+    <img class="header-img" src="{{desktopRarefield}}">
+    <div class="header-links">
+      <div class="Grid Grid--full u-textCenter">
         <div class="Grid-cell">
-          <div id="studio"class="headline">STUDIO SERVICES</div>
+          <a href="https://www.instagram.com/rarefieldrecordings/"><img class="insta-icon " src="../../assets/icon-insta.svg"></a>
+        </div>
+      </div>
+
+      <div class="Grid Grid--full u-textCenter">
+        <div class="Grid-cell">
+          <span class="header-text ">352.665.6663 | rarefieldrecordings@gmail.com</span>
         </div>
       </div>
     </div>
+
+    <div class="wrapper">
+
+      <!-- <div class="header-links">
+        <div>
+          <a href="https://www.instagram.com/rarefieldrecordings/"><img class="insta-icon " src="../../assets/icon-insta.svg"></a>
+        </div>
+        <div>
+          <span class="header-text ">352.665.6663 | rarefieldrecordings@gmail.com</span>
+        </div>
+      </div> -->
+
+    </div>
   </section>
+
 
   <section class="what">
     <div class="wrapper">
-      <div class="Grid Grid--cols-2">
-        <div class="Grid-cell what-text">
-          <h1>TRACKING</h1>
-          <p>Create and capture your sounds with experienced
-          professionals and realize your true potential at
-          Rarefield Recordings. We firmly believe in curating a
-          creative atmosphere and building positive, caring,
-          and genuine relationships with every artist we work
-          with.</p>
-        </div>
-        <div class="Grid-cell">
-          <img class="what-icon" src="../../assets/icon-tracking.svg">
-        </div>
-
-      </div>
-      <div class="Grid Grid--cols-2">
-        <div class="Grid-cell what-text">
-          <h1>MIXING</h1>
-          <p>Take the tracks we've recorded together at our studio and send them to the next level with our experienced house mixing engineer. Recorded your tracks at home? Here at Rarefield Recordings we'll work with you to polish your product to its full potential.</p>
-        </div>
-        <div class="Grid-cell">
-          <img class="what-icon" src="../../assets/icon-mixing.svg">
-        </div>
-
-      </div>
-      <div class="Grid Grid--cols-2">
-        <div class="Grid-cell what-text">
-          <h1>MASTERING</h1>
-          <p>Take your mixes to the next level with mastering. Here at rarefield recordings we'll use our years of experience to turn your mix into a pleasing and pristine master that your art desrves. Mastering costs $6.66 per recorded minute.</p>
-        </div>
-        <div class="Grid-cell">
-          <img class="what-icon" src="../../assets/icon-mastering.svg">
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="beat">
       <div class="Grid Grid--full">
         <div class="Grid-cell">
-          <div id="what" class="headline">WHAT WE DO.</div>
-        </div>
-      </div>
-
-      <div class="wrapper whatWeDoText">
-        <div class="Grid Grid--full">
-          <div class="Grid-cell">
-            <img class="beat-img" src="../../assets/text-fullband.png">
-          </div>
-        </div>
-        <div class="Grid Grid--full">
-          <div class="Grid-cell">
-            <div class="">
-              <p>Multi-track your full band or solo project. Drums, bass, guitar, vocals, keyboard, strings, auxiliary percussion, and any type of sound you could ever think of creating. We also offer live band tracking for capturing a specific experience you wish to convey to your audience.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="Grid Grid--full">
-          <div class="Grid-cell">
-            <img class="beat-img" src="../../assets/text-voice.png">
-          </div>
-        </div>
-        <div class="Grid Grid--full">
-          <div class="Grid-cell">
-            <div class="">
-              <p>Recording an audiobook? Narrating your latest nature documentary? Need to record content for your latest mindfulness app? We've got you covered with high fidelity condenser and dynamic microphones along with top of the line sound isolation to give you the cleanest possible tracks for your project.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="Grid Grid--full">
-          <div class="Grid-cell">
-            <img class="beat-img" src="../../assets/text-podcast.png">
-          </div>
-        </div>
-        <div class="Grid Grid--full">
-          <div class="Grid-cell">
-            <div class="">
-              <p>Record your latest, cutting edge podcast with up to eight of your friends or colleagues. We'll capture all voices clearly and independently for a clear and concise mix to maximize listenability.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="Grid Grid--full">
-          <div class="Grid-cell">
-            <img class="beat-img" src="../../assets/text-session.png">
-          </div>
-        </div>
-        <div class="Grid Grid--full">
-          <div class="Grid-cell">
-            <div class="">
-              <p>
-                Have musical concepts but lack the chops to bring your vision to life? At rarefield Recordings we've got you covered. Our in house session drummer has 14 years experience with bands, sessions, and touring to help you relalize all the percussion needs you could have. Let our in house guitar player fulfill all your sonic needs with his 15+ years experience.</p>
-            </div>
+          <div id="studio" class="headline">STUDIO SERVICES
           </div>
         </div>
       </div>
-  </section>
-
-
-
-  <section class="beat">
-      <div class="Grid Grid--full u-textCenter">
+      <div class="Grid Grid--full">
         <div class="Grid-cell">
-          <div id="beat" class="headline">BEAT LEASES</div>
-        </div>
-      </div>
-      <div class="wrapper">
-      <div class="Grid Grid--full u-textCenter">
-        <div class="Grid-cell">
-          <div class="subheadline">Rarefield Recordings offers all the beat production needs you could dream of. From beat leases to artist development, beat mixing/master- ing to full album rollout, we have the experience and drive to help you accomplish your aesthetic.
-          </div>
+          <hr/>
         </div>
       </div>
 
-      <div class="Grid Grid--full u-textCenter">
-        <div class="Grid-cell">
-          <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1454532116/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://rarefieldrecordings.bandcamp.com/album/rarefield-recordings">Rarefield Recordings by Rarefield Recordings</a></iframe>
-        </div>
-      </div>
-
-
-      <div class="Grid Grid--full u-textCenter">
-        <div class="Grid-cell">
-          <div class="price-container">
-            <span class="price-text">$35/beat</span>
-            <h1>
-              PREMIUM
-            </h1>
-            <p>Tagged .wav file (2-track) Must credit     "prod. by jug" Instrumental still for sale
-            Up to 3000 downloads without renewing lease.
-            </p>
-            <br>
-            <button>PURCHASE</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="Grid Grid--full u-textCenter">
-        <div class="Grid-cell">
-          <div class="price-container">
-          <span class="price-text">$150/beat</span>
-          <h1>
-            UNLIMITED
-          </h1>
-            <p>Untagged .wav file and full beat trackout in .wav format Must credit "prod. by jug" Instrumental still for sale Unlimited downloads with no lease renewal
+      <div class="Grid Grid--full">
+        <div class="Grid-cell what-text">
+          <h1>TRACKING</h1>
+          <p>Create and capture your sounds with experienced professionals and realize your true potential at Rarefield Recordings. We firmly believe in curating a creative atmosphere and building positive, caring, and genuine relationships with every artist
+            we work with.
           </p>
-          <button>PURCHASE</button>
+        </div>
+        <div class="Grid-cell">
+        </div>
+
+      </div>
+      <div class="Grid Grid--full">
+        <div class="Grid-cell what-text">
+          <h1>MIXING</h1>
+          <p>Take the tracks we've recorded together at our studio and send them to the next level with our experienced house mixing engineer. Recorded your tracks at home? Here at Rarefield Recordings we'll work with you to polish your product to its full
+            potential.</p>
+        </div>
+        <div class="Grid-cell">
+        </div>
+
+      </div>
+      <div class="Grid Grid--full">
+        <div class="Grid-cell what-text">
+          <h1>MASTERING</h1>
+          <p>Take your mixes to the next level with mastering. Here at rarefield recordings we'll use our years of experience to turn your mix into a pleasing and pristine master that your art desrves.</p>
+        </div>
+        <div class="Grid-cell">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="what" class="beat">
+
+    <div class="wrapper whatWeDoText">
+      <div class="Grid Grid--full">
+        <div class="Grid-cell">
+          <div id="what" class="headline">WHAT WE DO
+          </div>
+          <div class="Grid Grid--full">
+            <div class="Grid-cell">
+              <hr/>
+            </div>
+          </div>
+          <img class="beat-img beat-padding" src="../../assets/text-fullband.png">
+        </div>
+      </div>
+      <div class="Grid Grid--full">
+        <div class="Grid-cell">
+          <div class="">
+            <p>Multi-track your full band or solo project. Drums, bass, guitar, vocals, keyboard, strings, auxiliary percussion, and any type of sound you could ever think of creating. We also offer live band tracking for capturing a specific experience
+              you wish to convey to your audience.</p>
           </div>
         </div>
       </div>
 
-      <div class="Grid Grid--full u-textCenter">
+      <div class="Grid Grid--full">
         <div class="Grid-cell">
-          <div class="price-container">
-            <span class="price-text">$35/beat</span>
-            <h1>
-              PREMIUM
-            </h1>
-            <p>Tagged .wav file (2-track) Must credit     "prod. by jug" Instrumental still for sale
-            Up to 3000 downloads without renewing lease.
-            </p>
-            <br>
-            <button>PURCHASE</button>
+          <img class="beat-img" src="../../assets/text-voice.png">
+        </div>
+      </div>
+      <div class="Grid Grid--full">
+        <div class="Grid-cell">
+          <div class="">
+            <p>Recording an audiobook? Narrating your latest nature documentary? Need to record content for your latest mindfulness app? We've got you covered with high fidelity condenser and dynamic microphones along with top of the line sound isolation
+              to give you the cleanest possible tracks for your project.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="Grid Grid--full">
+        <div class="Grid-cell">
+          <img class="beat-img" src="../../assets/text-podcast.png">
+        </div>
+      </div>
+      <div class="Grid Grid--full">
+        <div class="Grid-cell">
+          <div class="">
+            <p>Record your latest, cutting edge podcast with up to eight of your friends or colleagues. We'll capture all voices clearly and independently for a clear and concise mix to maximize listenability.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="Grid Grid--full">
+        <div class="Grid-cell">
+          <img class="beat-img" src="../../assets/text-session.png">
+        </div>
+      </div>
+      <div class="Grid Grid--full">
+        <div class="Grid-cell">
+          <div class="">
+            <p>
+              Have musical concepts but lack the chops to bring your vision to life? At rarefield Recordings we've got you covered. Our in house session drummer has 14 years experience with bands, sessions, and touring to help you relalize all the percussion needs
+              you could have. Let our in house guitar player fulfill all your sonic needs with his 15+ years experience.</p>
           </div>
         </div>
       </div>
@@ -228,17 +174,79 @@
   </section>
 
 
+
   <section class="beat">
-    <div class="Grid Grid--full u-textCenter">
-      <div class="Grid-cell">
-        <div id="beat" class="headline">FEATURED TRACKS</div>
-      </div>
-    </div>
     <div class="wrapper">
       <div class="Grid Grid--full u-textCenter">
         <div class="Grid-cell">
-          <div class="iframe-container">
-            <iframe style="border: 0; width: 100%; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=1454532116/size=large/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/" seamless><a href="http://beatsbyjug.bandcamp.com/album/427">427 by Beats by Jug (rarefield recordings)</a></iframe>
+          <div id="beat" class="headline">BEAT LEASES</div>
+          <div class="Grid Grid--full">
+            <div class="Grid-cell">
+              <hr/>
+            </div>
+          </div>
+          <div class="subheadline"><i>Rarefield Recordings offers all the beat production needs you could dream of. From beat leases to artist development, beat mixing/master- ing to full album rollout, we have the experience and drive to help you accomplish your aesthetic.</i>
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid Grid--full u-textCenter">
+        <div class="Grid-cell">
+          <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1454532116/size=small/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://beatsbyjug.bandcamp.com/album/427">427 by Beats by Jug (rarefield recordings)</a></iframe>
+        </div>
+      </div>
+
+
+      <div class="Grid Grid--full u-textCenter">
+        <div class="Grid-cell">
+          <div class="price-container">
+            <span class="price-text">$35/beat</span>
+            <h1>
+              PREMIUM
+            </h1>
+            <p>Tagged .wav file (2-track)<br/>
+               Must credit "prod. by jug"<br/>
+               Instrumental still for sale<br/>
+              Up to 3000 downloads without renewing lease.
+            </p>
+            <br>
+            <a href="https://beatsbyjug.bandcamp.com/album/427"><button>PURCHASE</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid Grid--full u-textCenter">
+        <div class="Grid-cell">
+          <div class="price-container">
+            <span class="price-text">$150/beat</span>
+            <h1>
+            UNLIMITED
+          </h1>
+            <p>Untagged .wav file and full beat trackout in .wav format<br/>
+            Must credit "prod. by jug" <br/>
+            Instrumental still for sale <br/>
+            Unlimited downloads with no lease renewal
+            </p>
+            <br/>
+            <a href="https://beatsbyjug.bandcamp.com/album/427"><button>PURCHASE</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid Grid--full u-textCenter">
+        <div class="Grid-cell">
+          <div class="price-container">
+            <span class="price-text">$35/beat</span>
+            <h1>
+              PREMIUM
+            </h1>
+            <p>Full beat trackout in .wav format<br/>
+              No producer credit required <br/>
+              Instrumental not for sale anymore <br/>
+              Unlimited downloads with no renewal<br/>
+            </p>
+            <br>
+            <a href="https://beatsbyjug.bandcamp.com/album/427"><button>PURCHASE</button></a>
           </div>
         </div>
       </div>
@@ -246,19 +254,22 @@
   </section>
 
   <section class="equipment">
-      <div class="Grid Grid--full u-textCenter">
+    <div class="wrapper">
+      <div class="headline">Our Equipment</div>
+      <div class="Grid Grid--full">
         <div class="Grid-cell">
-          <div class="headline">Our Equipment</div>
+          <hr/>
         </div>
       </div>
-      <div class="wrapper">
-          <div class="equipment-name">
-            <span (click)="mic = !mic" class="">
-              <img [hidden]="!mic" (click)="mic = !mic" class="icon" src="../../assets/icon-minus.svg">
-              <img [hidden]="mic" (click)="mic = !mic" class="icon" src="../../assets/icon-plus.svg">
+
+      <div class="equipment-name equipment-padding">
+        <span (click)="mic = !mic" class="">
+              <img [hidden]="!mic"  class="icon" src="../../assets/icon-minus.svg">
+              <img [hidden]="mic"  class="icon" src="../../assets/icon-plus.svg">
                MICROPHONES
 
                <div class="equipment-text" [hidden]="!mic">
+                 <br/>
                  <p>Shure SM 57 (x3)</p>
                  <p>Shure Beta 52a </p>
                  <p>Sennheiser e609</p>
@@ -268,14 +279,15 @@
                  <p>Blue Bluebird</p>
                </div>
             </span>
-          </div>
-          <div class="equipment-name">
-            <span (click)="Hardware = !Hardware" class="">
-              <img [hidden]="!Hardware" (click)="Hardware = !Hardware" class="icon" src="../../assets/icon-minus.svg">
-              <img [hidden]="Hardware" (click)="Hardware = !Hardware" class="icon" src="../../assets/icon-plus.svg">
+      </div>
+      <div class="equipment-name">
+        <span (click)="Hardware = !Hardware" class="">
+              <img [hidden]="!Hardware"  class="icon" src="../../assets/icon-minus.svg">
+              <img [hidden]="Hardware"  class="icon" src="../../assets/icon-plus.svg">
                HARDWARE
 
                <div class="equipment-text" [hidden]="!Hardware">
+                  <br/>
                   <p>Tascam US 16x08</p>
                   <p>Yamaha HS7</p>
                   <p>Warm Audio WA76</p>
@@ -293,15 +305,15 @@
                   <p>Tama Steel 14x6.5 Snare</p>
                </div>
             </span>
-          </div>
-          <div class="equipment-name">
-            <span (click)="Software = !Software" class="">
-              <img [hidden]="!Software" (click)="Software = !Software" class="icon" src="../../assets/icon-minus.svg">
-              <img [hidden]="Software" (click)="Software = !Software" class="icon" src="../../assets/icon-plus.svg">
+      </div>
+      <div class="equipment-name">
+        <span (click)="Software = !Software" class="">
+              <img [hidden]="!Software"  class="icon" src="../../assets/icon-minus.svg">
+              <img [hidden]="Software"  class="icon" src="../../assets/icon-plus.svg">
                SOFTWARE
 
                <div class="equipment-text" [hidden]="!Software">
-
+                 <br/>
                  <p>Reaper</p>
                  <p>FL Studio </p>
                  <p>Moldyne</p>
@@ -312,57 +324,30 @@
                  <p> Software Synths (Serum,  Massive,  Hybrid)</p>
                </div>
             </span>
-          </div>
-        <!-- <div class="Grid Grid--gutters Grid--cols-2">
-          <div class="Grid-cell equipment-name">
-            <div class="" (click)="changeMic()">
-              <img class="icon" src="../../assets/icon-minus.svg">
-               <span class="equipment-icon-name">MICROPHONES
-               </span>
-               <div class="equipment-text" [hidden]="!mic">
-                 <p>Shure SM 57 (x3)</p>
-                 <p>Shure Beta 52a </p>
-                 <p>Sennheiser e609</p>
-                 <p>Nady DM70 (x2)</p>
-                 <p>Avantone CV-12</p>
-                 <p>Rode M5 (x2)</p>
-                 <p>Blue Bluebird</p>
-               </div>
-            </div>
+      </div>
+    </div>
+  </section>
 
-            <div (click)="changeHard()">
-              <img class="icon" src="../../assets/icon-minus.svg">
-              <span class="equipment-icon-name">HARDWARE</span>
-              <div class="equipment-text" [hidden]="!hard">
-                <p>hardware</p>
-                <p>Shure Beta 52a </p>
-                <p>Sennheiser e609</p>
-                <p>Nady DM70 (x2)</p>
-                <p>Avantone CV-12</p>
-                <p>Rode M5 (x2)</p>
-                <p>Blue Bluebird</p>
-              </div>
-            </div>
-            <div class="" (click)="changeSoft()">
-              <img class="icon" src="../../assets/icon-minus.svg">
-              <span class="equipment-icon-name">SOFTWARE</span>
-              <div class="equipment-text" [hidden]="!soft">
-                <p>Software</p>
-                <p>Shure Beta 52a </p>
-                <p>Sennheiser e609</p>
-                <p>Nady DM70 (x2)</p>
-                <p>Avantone CV-12</p>
-                <p>Rode M5 (x2)</p>
-                <p>Blue Bluebird</p>
-              </div>
-            </div>
+  <section class="beat">
+    <div class="wrapper">
+      <div id="beat" class="headline">FEATURED TRACKS</div>
+      <div class="Grid Grid--full">
+        <div class="Grid-cell">
+          <hr/>
+        </div>
+      </div>
+      <div class="Grid Grid--full u-textCenter">
+        <div class="Grid-cell">
+          <div class="iframe-container">
+            <iframe style="border: 0; width: 100%; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=1454532116/size=large/bgcol=333333/linkcol=ffffff/artwork=none/transparent=true/" seamless><a href="http://beatsbyjug.bandcamp.com/album/427">427 by Beats by Jug (rarefield recordings)</a></iframe>
           </div>
-        </div> -->
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-    <!-- <section class="contact_background" id="contact">
+  <!-- <section class="contact_background" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -373,34 +358,43 @@
     </section> -->
 
 
-  <section id="footer"class="footer">
+  <section id="contact" class="footer">
     <div class="wrapper">
+      <div class="Grid Grid--full">
+        <div class="Grid-cell">
+          <hr/>
+        </div>
+      </div>
       <div class="footer-container">
 
-          <ul>
-            <a href="https://www.instagram.com/rarefieldrecordings/"><img style="float:left" class="insta-icon" src="../../assets/icon-insta.svg">
-            </a>
-            <li><a class="active">Rarefield
+        <ul>
+
+          <li>
+            <a class="active">Rarefield
               Recordings<br/>
               705 NW 19th Ln<br/>
               Gainesville, Fl 32609<br/>
               rarefieldrecordings@gmail.com<br/>
 
-              352.665.6663</a></li>
-
-
-            <li class="right"><a class="active" href="#about">
+              352.665.6663<br/>
               <br/>
-              <br/>
-              Website by Farrow Interaction & Development © 2018</a></li>
+              Website by Farrow Interaction & Development © 2018
+            </a>
+          </li>
 
-          </ul>
+
+          <li class="right">
+
+              <a href="https://www.instagram.com/rarefieldrecordings/"><img style="float:left" class="insta-icon" src="../../assets/icon-insta.svg">
+                </a></li>
+
+        </ul>
       </div>
 
 
 
 
-    <!-- <div class="Grid Grid--gutters Grid--cols-2">
+      <!-- <div class="Grid Grid--gutters Grid--cols-2">
       <div class="Grid-cell">
         <div class="Grid Grid--cols-2">
           <div class="Grid-cell contact-icon ">
